@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #F2994A;
+}
+
+/* Header */
+
+header.principal {
+    background-image: url("https://images.unsplash.com/photo-1531299192269-7e6cfc8553bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header.principal h1 {
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    
+    padding: 1rem;
+    order: 2;
+}
+
+header.principal ul {
+    list-style: none; 
+    order: 1;
+    margin: 1rem 0 0 0.5rem;
+}
+
+header.principal ul li {
+    margin-bottom: 0.1rem;
+    padding: 0.1rem;
+}
+
+header.principal ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+    display: block;
+}
+
+header > a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    background-color: black;
+    
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    display: block;
+    max-width: 120px;
+    max-height: 30px;
+    order: 3;
+}
+
+/* Main */
+
+main section.intro {
+    margin: 1rem;
+}
+
+main section.intro h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+main section.intro p {
+    margin-bottom: 0.5rem;
+}
+
+main section.vacas ul {
+    margin:1rem auto;
+    display: flex;  
+    flex-direction: column;   
+}
+
+main section.vacas ul li {
+    min-height: 300px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+}
+
+main section.vacas ul li article header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+main section.vacas ul li article {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+main section.vacas ul li article a {
+    background-color: #c4c4c4;
+    color: black;
+    padding: 1rem 0;
+    text-decoration: none;
+}
+
+main section.vacas ul li article p  {
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main section.vacas ul li article header h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+/* Form */
+
+section.formulario {
+    background-color: white;
+    min-height: 300px;
+}
+
+section.formulario form {
+    margin: 2rem 1rem;
+}
+
+section.formulario form h2 {
+    color: #F2994A;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+section.formulario form div.row {
+    display: flex;
+}
+
+section.formulario form fieldset {
+    border-style: none;
+    margin: 0 1rem 1rem 0;
+    flex-direction: column;
+}
+
+section.formulario form fieldset label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+section.formulario form div.row fieldset {
+    width: 100%;
+}
+
+section.formulario form div.row fieldset input {
+    border: 2px solid black;
+    width: 100%;
+    background-color: #F2994A;
+    color: white;
+    padding: 0.5rem 0.5rem;
+}
+
+section.formulario form fieldset select {
+    width: 50%;
+    background-color: #F2994A;
+    border: 2px solid black;
+    color: white;
+    padding: 0.5rem 0.5rem;
+}
+
+section.formulario form fieldset textarea {
+    width: 100%;
+    min-height: 100px;
+    background-color: #F2994A;
+    border: 2px solid black;
+    color: white;
+    padding: 0.5rem 0.5rem;
+}
+
+section.formulario form fieldset.row3 {
+    display: flex;
+    flex-direction: row;
+}
+
+section.formulario form fieldset.row3 input {
+    background-color: #F2994A; 
+    margin-left: 1rem;
+}
+
+section.formulario form button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px){
+    
+    header.principal {
+        height: 400px;
+        
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header.principal h1 {
+        font-size: 4rem;
+        
+        flex-grow: 2;
+    }
+
+    header.principal ul {
+        margin: 2rem 0 0 1rem;
+        display: flex;
+        flex-grow: 1;
+    }
+
+    header.principal ul li {
+        margin-bottom: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    header > a {
+        margin: 2rem 1rem 0 5rem;
+        flex-grow: 1;
+    }
+
+    /* Main */
+
+    main section.intro h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    main section.intro p {
+        columns: 2;
+    }
+    
+    main section.vacas ul {
+        flex-direction: row;
+    }
+
+    main section.vacas ul li {
+        min-height: 400px;
+    }
+
+    main section.vacas ul li article header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    main section.vacas ul li article a {
+        padding: 1rem 0;
+    }
+    
+    main section.vacas ul li article header h1 {
+        font-size: 2rem;
+    }   
+}
+
+@media (min-width: 700px){
+    
+    header.principal {
+        height: 600px;
+    }
+
+    main section.vacas ul li {
+        min-height: 450px;
+        padding: 1rem;
+    }
+    
+    main section.vacas ul li article p  {
+        font-size: 0.9rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+}
