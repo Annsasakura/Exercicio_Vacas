@@ -282,7 +282,7 @@ section.formulario form button {
     }   
 }
 
-@media (min-width: 100px){
+@media (min-width: 1000px){
     
     header.principal {
         height: 600px;
